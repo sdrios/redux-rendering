@@ -7,3 +7,11 @@ dispatch({ type: null }); // Here we're making a call to dispatch() - this trigg
 
 // Write DOM event listeners here, make them dispatch actions to the Redux store 
 
+let newNameContainer = document.getElementById("nameForm")
+
+newNameContainer.addEventListener("keydown", e => {
+    if (e.keyCode === 13) {
+        e.preventDefault();
+        dispatch({ type: "NEW_NAME", value: e.target.value });
+    }
+})
