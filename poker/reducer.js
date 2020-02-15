@@ -14,6 +14,8 @@ const reducer = (state = initialState, action) => {
     const { type } = action;
 
     // ACTION - Change either card to a random new one (Try implementing one action that both buttons dispatch)
-    
+    //if ()
+
+
     return state;
 }

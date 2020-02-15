@@ -9,9 +9,9 @@ const reducer = (state = initialState, action) => {
 
     // Add a Name Tag
     if (type === "NEW_NAME"){
-
-        console.log(value);        
-        return state;
+        newState = state.concat(action.value);
+        console.log(newState);        
+        return newState;
 
     } else{
 
